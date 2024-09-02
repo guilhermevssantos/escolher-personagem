@@ -1,0 +1,104 @@
+body {
+    font-family: "Baskervville SC", serif;
+    color: white;
+    background-color: black;
+    overflow: hidden;
+}
+
+body::before{
+    content: "";
+    background-image: url(../img/fundo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 200px;
+    height: 90px;
+    position: relative;
+}
+
+.selecao-de-personagens {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    min-height: (100vh - 152px);
+    max-width: 100vw;
+}
+
+.selecao-de-personagens .lista-de-personagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.selecao-de-personagens .personagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    max-width: 585px;
+}
+
+.selecao-de-personagens .titulo {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+    width: 100%;
+}
+
+.lista-de-personagens .personagem {
+    border-bottom: 4px solid aquamarine;
+    cursor: pointer;
+}
+
+.lista-de-personagens .personagem img {
+    width: 140px;
+    height: 140px;
+}
+
+.lista-de-personagens .personagem.selecionado {
+    box-shadow: 0px 0px  24px 5px aquamarine;
+}
+
+.personagem-selecionado {
+    text-align: center;
+    max-height: 530px;
+}
+
+.personagem-selecionado .personagem-grande {
+    width: 400px;
+    height: 400px;
+}
+
+.personagem-selecionado .nome-personagem {
+    border-bottom: 2px solid white;
+    letter-spacing: 4px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.personagem-selecionado .descricao-personagem {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 5px;
+    width: 420px;
+    height: 80px;
+}

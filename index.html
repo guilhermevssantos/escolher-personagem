@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Nerko+One&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+    <title>SINoAlice</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <img class="logo" src="./src/img/logo.png" alt="logo">
+    </header>
+
+    <main class="selecao-de-personagens">
+
+        <section class="personagens">
+            <h1 class="titulo">Selecione um personagem:</h1>
+            <ul class="lista-de-personagens">
+                <li class="personagem selecionado" id="alice"
+                data-name="alice"
+                data-description="Alice sentiu um tédio avassalador enquanto se sentava perto do rio. Aparentemente do nada, ela avistou um coelho branco correndo apressadamente. Ela foi compelida a seguir a criatura.">   
+                    <img src="./src/img/card-alice.png" alt="Alice">
+                </li>
+
+                <li class="personagem" id="chapeuzinho"
+                data-name="chapeuzinho" data-description="Uma refeição simples desencadeia uma tragédia após um erro. A garota acorda em um mundo ensanguentado, presa em uma espiral de crimes e ódio. Quem revelará a verdade por trás de sua desgraça?">
+                    <img src="./src/img/card-chapeuzinho.png" alt="chapeuzinho">                    
+                </li>
+
+                <li class="personagem" id="sereia" 
+                data-name="Pequena Sereia" 
+                data-description="O amor, uma vez realizado, se torna obsoleto; quando não, permanece bonito. Ela trocou sua voz e lar pelo amor, que nunca alcançou. Sua sede a levou a um fim sufocante, entre lágrimas de alegria e tristeza.">
+                    <img src="./src/img/card-sereia.png" alt="sereia">
+                </li>
+
+                <li class="personagem" id="branca-de-Neve"
+                data-name="Branca de Neve" data-description="Uma garota enlouqueceu pelo espelho. Após atrair muitos, ela encontrou o príncipe. Contudo, a lembrança de sua primeira morte a assombra, refletindo sua culpa inescapável.">
+                    <img src="./src/img/card-branca-de-neve.png" alt="branca de neve">
+                </li>
+
+                <li class="personagem" id="cinderella"
+                data-name="Cinderella" data-description="Uma menina miserável recebe poder de uma fada, descobrindo a verdadeira força. Em um mundo onde só os fortes sobrevivem, ela almejase transformando em uma mulher poderosa que conquista seu próprio castelo.">
+                    <img src="./src/img/card-cinderella.png" alt="Cinderella">
+                </li>
+
+                <li class="personagem" id="pinoquio"
+                data-name="pinoquio"
+                data-description="Pinóquio, um boneco desajustado, luta para se tornar um menino de verdade. Seu desejo parece distante enquanto ele enfrenta uma série de desastres e pede ajuda desesperadamente">
+                    <img src="./src/img/card-pinoquio.png" alt="Pinoquio">
+                </li>
+            </ul>
+        </section>
+        <section class="personagem-selecionado">
+            <img class="personagem-grande" src="./src/img/personagem-alice.png" alt="Personagem Selecionado"
+            />
+
+            <div class="informacoes-personagem">
+                <h2 class="nome-personagem" id="nome-personagem">Alice</h2>
+                <p class="descricao-personagem" id="descricao-personagem">
+                    Alice sentiu um tédio avassalador enquanto se sentava perto do rio. Aparentemente do nada, ela avistou um coelho branco correndo apressadamente. Ela foi compelida a seguir a criatura.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>
